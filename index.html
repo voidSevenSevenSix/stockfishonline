@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="title" content="StockfishOnline - Stockfish Chess Engine API">
+        <meta name="description" content="StockfishOnline - Add Stockfish to your application or website with this API. Simply send a FEN and a depth, and get the best move and more back.">
+        <meta name="keywords" content="stockfish, api, chess, engine">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <title>StockfishOnline - Stockfish Chess Engine API</title>
+        <script>
+
+        </script>
+        <style>
+            @font-face{
+                font-family:'raleway';
+                src:url('raleway.ttf');
+            }
+            body{
+                background-color:#BBBBBB;
+                margin:0;
+                padding:0;
+                font-family:'raleway';
+            }
+            .goButton{
+                background-color:#33BB33;
+                border:2px solid black;
+                border-radius:30px;
+                padding:5px;
+                font-size:30px;
+                margin:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display:flex">
+            <img src="stockfish.png" style="width:90px;display:inline">
+            <span style="font-size:80px;display:inline">StockfishOnline: API for Stockfish</span>
+        </div>
+        <div style="text-align:center;display:block;margin-left:auto;margin-right:auto;border:3px solid black;border-radius:10px;width:1200px">
+            <h1>Add Stockfish to your Application via a GET API in 3 steps</h1>
+            <h4>Make a GET request, and get an answer from Stockfish</h4>
+            <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text&width=1035&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=https%253A%252F%252Fstockfish.online%252Fapi%252F%253Ffen%253DFEN_HERE%2526key%253DAPI_KEY%2526depth%253DDPETH_NUMBER%2526mode%253DMODE"
+  style="width: 1035px; height: 78px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+            <h4>The parameters are as follows</h4>
+            <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text&width=1035&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=fen%253DA%2520Chess%2520FEN%2520position%250Akey%253DYour%2520API%2520key%250Adepth%253DThe%2520depth%2520the%2520engine%2520should%2520go%2520at%250Amode%253DThe%2520type%2520of%2520response%2520the%2520engine%2520should%2520give.%2520This%2520can%2520be%2520a%2520best%2520move%252C%2520evaluation%252C%2520or%2520line."
+  style="width: 1035px; height: 133px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+            <h2>Simple and easy, right?</h2>
+            <button class="goButton" type="button" onclick="window.location.href='/start/'">Get Started</button>
+        </div>
+        <br><br>
+        <div style="display:block;margin-left:auto;margin-right:auto;border:3px solid black;border-radius:10px;width:1200px;padding:10px">
+            <h1>A bit about the project</h1>
+            <p>Hello, fellow developers and Chess players! You have probably come here in the search of a simple way to add Stockfish to your application, because this is way harder than it should be.</p>
+            <p>When I made this project, I needed an API like this but simply couldn't find one. The closest thing there is can be found at https://www.chessdb.cn/cdb.php, which isn't actually Stockfish, but rather a database of positions. However, if your position isn't in the database, it can't help you.</p>
+            <p>Quick shoutout to hyugit on Github, who wrote the nodejs program which creates a Stockfish server locally. The code did require tweaking, but was functional enough that I could make do and expand upon it.</p>
+            <p>Then I wrote up a PHP program to query and serve data from the locally hosted Stockfish, and it was done!</p>
+            <p>Lastly, please excuse my CSS skills :) Not something I ever put any effort into as I'm more of a backend guy...</p>
+        </div>
+    </body>
+</html>
